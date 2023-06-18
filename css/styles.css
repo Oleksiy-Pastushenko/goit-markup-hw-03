@@ -1,3 +1,9 @@
+.container {
+    width: 1200px;
+}
+.header-section {
+    display: flex;
+}
 body {
     font-family: Roboto, sans-serif;
     color: #212121;
@@ -13,7 +19,12 @@ a {
     --secondarycolor: #2196F3;
     --accentcolor: #FFFFFF;
 }
+.logo-link {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    }
 .logo-text {
+    margin-left: 215px;
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -30,8 +41,15 @@ a {
 .logo-link:focus {
     color: teal;
 }
+.site-nav {
+    display: flex;
+    margin: 32px 354px 32px 93px;
+}
 .site-nav .link-site-nav {
     color: var(--secondarycolor);
+}
+.nav-item:not(:last-child) {
+    margin-right: 50px;
 }
 .nav-link {
     font-style: normal;
