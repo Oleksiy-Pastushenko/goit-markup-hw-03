@@ -1,11 +1,6 @@
 html {
     box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
 ul {
     padding: 0;
     margin: 0;
@@ -20,7 +15,7 @@ li {
 }
 
 .container {
-    width: 1200px;
+    width: 1230px;
     margin-left: 215px;
     margin-right: 215px;
     padding-left: 15px;
@@ -28,7 +23,7 @@ li {
     
 }
 .header-section {
-    display: inline-flex;
+    display: flex;
     border-bottom: 1px solid #ECECEC;
     }
 body {
@@ -67,10 +62,10 @@ a {
 }
 .site-nav {
     display: flex;
-    margin: 32px 354px 32px 93px;
+    margin: 32px 0px 32px 93px;
 }
-.site-nav .link-site-nav {
-    color: var(--secondarycolor);
+.site-nav  {
+    color: var(--maincolor);
 }
 .nav-item:not(:last-child) {
     margin-right: 50px;
@@ -83,6 +78,9 @@ a {
     letter-spacing: 0.02em;
     color: #212121;
 }
+.link-site-nav {
+    color: var(--secondarycolor);
+}
 .nav-link:active,
 .nav-link:hover,
 .nav-link:focus {
@@ -92,6 +90,7 @@ a {
     display: flex;
     margin-top: 32px;
     margin-bottom: 32px;
+    margin-left: auto;
     }
 .contacts-item:not(:last-child) {
     margin-right: 40px;
@@ -293,13 +292,15 @@ a {
 .proects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     row-gap: 30px;
 }
 .list-item-proects {
+    margin-right: 30px;
     border: 1px solid #EEE;
     background: #FFF;
-
+}
+.list-item-proects:nth-child(3n) {
+    margin-right: 0px;
 }
 .proects-title {
     margin-left: 24px;
