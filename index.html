@@ -13,10 +13,11 @@
         rel="stylesheet">
 </head>
 <body>
-    <header class="header-section container">
-        <a class="logo-link logo-text" href="#" lang="en">Web<span class="logo-link logo-title">Studio</span></a>
-        <nav>
-            <ul class="site-nav">
+    <header class="header-section">
+        <div class="container header-cont">
+            <a class="logo-link logo-text" href="#" lang="en">Web<span class="logo-link logo-title">Studio</span></a>
+            <nav>
+                <ul class="site-nav">
                     <li class="nav-item">
                         <a class="nav-link link-site-nav" href="./index.html">Студія</a>
                     </li>
@@ -26,8 +27,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Контакти</a>
                     </li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
             <ul class="section-contacts">
                 <li class="contacts-item">
                     <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -36,12 +37,15 @@
                     <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        
+        </div>       
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-btn" type="button">Замовити послугу</button>
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button class="hero-btn" type="button">Замовити послугу</button>
+            </div>
+            
         </section>
         
         <section class="preference-section">
@@ -92,23 +96,31 @@
                 <ul class="comand-item">
                     <li class="comand-items">
                         <img class="comand-img" src="./images/comands/1.jpg" alt="Фото Ігоря Дем'яненко" width="270" height="260">
-                        <h3 class="comand-name">Ігор Дем'яненко</h3>
-                        <p class="comand-text">Product Designer</p>
+                        <div class="comand-info">
+                            <h3 class="comand-name">Ігор Дем'яненко</h3>
+                            <p class="comand-text">Product Designer</p>
+                        </div>
                     </li>
                     <li class="comand-items">
                         <img class="comand-img" src="./images/comands/2.jpg" alt="Фото Ольги Репіної" width="270" height="260">
-                        <h3 class="comand-name">Ольга Рєпіна</h3>
-                        <p class="comand-text">Frontend Developer</p>
+                        <div class="comand-info">
+                            <h3 class="comand-name">Ольга Рєпіна</h3>
+                            <p class="comand-text">Frontend Developer</p>
+                        </div>
                     </li>
                     <li class="comand-items">
                         <img class="comand-img" src="./images/comands/3.jpg" alt="Фото Миколи Тарасова" width="270" height="260">
-                        <h3 class="comand-name">Микола Тарасов</h3>
-                        <p class="comand-text">Marketing</p>
+                        <div class="comand-info">
+                            <h3 class="comand-name">Микола Тарасов</h3>
+                            <p class="comand-text">Marketing</p>
+                        </div>
                     </li>
                     <li class="comand-items">
                         <img class="comand-img" src="./images/comands/4.jpg" alt="Фото михайла Єрмакова" width="270" height="260">
-                        <h3 class="comand-name">Михайло Єрмаков</h3>
-                        <p class="comand-text">UI Designer</p>
+                        <div class="comand-info">
+                            <h3 class="comand-name">Михайло Єрмаков</h3>
+                            <p class="comand-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>

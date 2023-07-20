@@ -13,17 +13,21 @@ p,
 li {
     margin: 0;
 }
-
+img {
+    display: block;
+}
 .container {
-    width: 1230px;
-    margin-left: 215px;
-    margin-right: 215px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    
+}
+    .header-cont {
+    display: flex;
+    align-items: center;
 }
 .header-section {
-    display: flex;
     border-bottom: 1px solid #ECECEC;
     }
 body {
@@ -60,17 +64,23 @@ a {
 .logo-link:focus {
     color: teal;
 }
+nav {
+    margin-left: 93px;
+    
+}
 .site-nav {
     display: flex;
-    margin: 32px 0px 32px 93px;
-}
-.site-nav  {
+    align-items: center;
     color: var(--maincolor);
 }
+
 .nav-item:not(:last-child) {
     margin-right: 50px;
 }
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -88,8 +98,6 @@ a {
 }
 .section-contacts {
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
     margin-left: auto;
     }
 .contacts-item:not(:last-child) {
@@ -103,6 +111,10 @@ a {
     letter-spacing: 0.02em;
     color: var(--maincolor);
 }
+.contacts-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 .contacts-link:active,
 .contacts-link:hover,
 .contacts-link:focus {
@@ -112,16 +124,16 @@ a {
     background: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    text-align: center;
     }
 .hero-title {
     width: 696px;
-    margin-left: 452px;
-    margin-right: 452px;
+    margin-left: auto;
+    margin-right: auto;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 2.64px;
     text-transform: uppercase;
     color: var(--accentcolor);
@@ -132,15 +144,14 @@ a {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding: 10px 24px;
     margin-top: 30px;
-    margin-left: 700px;
-    margin-right: 700px;
+    margin-left: auto;
+    margin-right: auto;
     background: var(--secondarycolor);
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
     align-items: center;
-    text-align: center;
     letter-spacing: 0.96px;
     color: var(--accentcolor);
     cursor: pointer;
@@ -155,6 +166,9 @@ a {
 }
 .preference-lists {
     display: flex;
+}
+.preference-item {
+    width: 270px;
 }
 .preference-item:not(:last-child) {
     margin-right: 30px;
@@ -192,7 +206,9 @@ a {
 }
 .work-container {
     display: flex;
-    justify-content: space-between;
+}
+.work-items:not(:last-child) {
+    margin-right: 30px;
 }
 .work-section {
     padding-bottom: 94px; 
@@ -206,10 +222,16 @@ a {
 }
 .comand-item {
     display: flex;
-    justify-content: space-between;
+}
+.comand-items:not(:last-child) {
+    margin-right: 30px;
 }
 .comand-items {
     background: var(--accentcolor);
+}
+.comand-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .comand-name {
     font-style: normal;
@@ -218,7 +240,6 @@ a {
     line-height: 1.19;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .comand-text {
@@ -227,7 +248,7 @@ a {
     letter-spacing: 0.03em;
     color: var(--maincolor);
     text-align: center;
-    margin-bottom: 30px;
+    
 }
 .footer-section {
     background: #2F303A;
@@ -293,18 +314,21 @@ a {
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
+    column-gap: 30px;
 }
 .list-item-proects {
-    margin-right: 30px;
-    border: 1px solid #EEE;
     background: #FFF;
 }
-.list-item-proects:nth-child(3n) {
-    margin-right: 0px;
+.proect-info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border-bottom: 1px solid #EEE;
+    border-left: 1px solid #EEE;
+    border-right: 1px solid #EEE;
 }
+
 .proects-title {
-    margin-left: 24px;
-    margin-top: 20px;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -313,9 +337,7 @@ a {
     color: #212121;
 }
 .proects-text {
-    margin-left: 24px;
     margin-top: 4px;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
