@@ -43,10 +43,6 @@ a {
     --secondarycolor: #2196F3;
     --accentcolor: #FFFFFF;
 }
-.logo-link {
-    margin-top: 24px;
-    margin-bottom: 25px;
-    }
 .logo-text {
     font-family: Raleway, sans-serif;
     font-style: normal;
@@ -280,11 +276,11 @@ nav {
     color: var(--secondarycolor);
 }
 .our-proects {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .nav-proects-btn {
     display: flex;
-    margin-top: 94px;
     margin-bottom: 50px;
     justify-content: center;
     
@@ -320,9 +316,7 @@ nav {
     background: #FFF;
 }
 .proect-info {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    padding: 20px 24px;
     border-bottom: 1px solid #EEE;
     border-left: 1px solid #EEE;
     border-right: 1px solid #EEE;
