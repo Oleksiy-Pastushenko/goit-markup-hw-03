@@ -117,7 +117,14 @@ nav {
     color: var(--secondarycolor);
 }
 .hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
     background: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../images/hero\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -224,6 +231,7 @@ nav {
 }
 .comand-items {
     background: var(--accentcolor);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 .comand-info {
     padding-top: 30px;
@@ -306,6 +314,10 @@ nav {
     background: var(--secondarycolor);
     color: var(--accentcolor);
 }
+.btn-proects:hover,
+.btn-proects:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
 .proects-list {
     display: flex;
     flex-wrap: wrap;
@@ -314,6 +326,9 @@ nav {
 }
 .list-item-proects {
     background: #FFF;
+}
+.list-item-proects:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .proect-info {
     padding: 20px 24px;
